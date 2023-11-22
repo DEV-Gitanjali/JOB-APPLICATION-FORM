@@ -22,8 +22,86 @@ body{
     box-shadow: 4px 3px 5px rgb(1,1,1,0.1);
     border-radius: 10px;
 }
-
+/* this line for title small */
 .title_small{
 
     font-size:20px ;
 }
+/* this line for container  */
+.form_container{
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+    gap: 20px;
+}
+/* this line for form control  */
+.form_control{
+
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* this line code for all label */
+label{
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+/* this line code for input ,select , textarea */
+input,select,textarea{
+    padding: 2px 5px;
+    border: 1px solid rgb(240, 238, 232);
+    border-radius: 4px;
+    font-size: 15px;
+
+}
+/* this line code for input focus color */
+input:focus{
+    outline-color: red;
+}
+/* this line code for button container */
+.button_container{
+
+    text-align:right;
+    margin-top: 20px;
+}
+/* this line code for button  */
+button{
+    background-color: rgb(168, 13, 13);
+    border: transparent solid 2px;
+    padding: 5px 10px;
+    color: white;
+    border-radius: 8px;
+    transition:0.3s ease-in ;
+}
+/* this line code for button hover */
+button:hover{
+    background-color: rgb(235, 233, 231);
+    border: red;
+    color: black;
+    transition: 0.3s ease-out;
+    cursor: pointer;
+}
+/* this line code code for textarea control */
+.textarea_control{
+
+    grid-column: 1/span 2;
+}
+/* this line code for text control textarea */
+.textarea_control textarea{
+
+    width: 100%;
+
+}
+/* this line code for @media queries */
+@media (max-width:460px) {
+
+    .textarea_control{
+
+        grid-column: 1/span 2;
+    }
+
+}
+
+
+
